@@ -3,22 +3,17 @@ import './Detailes.css'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 const Detailes = () => {
-    const [movie,setmovie]=useState([])
+  const [movie, setmovie] = useState([]);
+  const param = useParams();
 
-    const param=useParams();
-   
-
-    const getfilms = async ()=>{
-
-        const res = await axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=52ef927bbeb21980cd91386a29403c78&language=ar`)
-        setmovie(res.data) 
-
-       console.log(res.data)
-       
-    }
-    useEffect(()=>{
-        getfilms()
-    },[movie])
+  useEffect(() => {
+    const getfilms = async () => {
+      const res = await axios.get(`https://api.themoviedb.org/3/movie/${param.id}?api_key=52ef927bbeb21980cd91386a29403c78&language=ar`);
+      setmovie(res.data);
+      console.log(res.data);
+    };
+    getfilms();
+  }, [param.id]);
 
   return (
     
