@@ -23,7 +23,7 @@ function App() {
     setmov(res.data.results);
   }
   const search = async(word)=>{
-    if(word==''){
+    if(word===''){
       getallmovies()
     }
     else{
