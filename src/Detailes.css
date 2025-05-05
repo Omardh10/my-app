@@ -1,0 +1,37 @@
+.det{
+    padding-top: 60px;
+}
+.contr{
+    padding-top: 20px;
+}
+.colcont{
+    color: #fff;
+    width: 100%;
+}
+.firo{
+    background-color: #111;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.imgdet{
+    border-radius: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+.story{
+    background-color: #111;
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-radius: 18px;
+    color: #fff;
+}
+.bton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.btn{
+    margin: 0px 10px;
+}
