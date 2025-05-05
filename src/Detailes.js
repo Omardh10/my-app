@@ -18,7 +18,7 @@ const Detailes = () => {
     }
     useEffect(()=>{
         getfilms()
-    },[getfilms])
+    },[movie])
 
   return (
     
