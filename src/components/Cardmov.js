@@ -8,7 +8,7 @@ const Cardmov = ({film}) => {
     <div>
         <div className='col col-lg-3 col-md-4'>
    <Link to={`/detailes/${film.id}`}> <div className='card'>
-        <img src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`} width={250} height={300} className='immg'/>
+        <img src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`} alt='image1' width={250} height={300} className='immg'/>
         {/* <div className='card-content connt '>
             
                 <h5>اسم الفيلم:{film.original_title}</h5>

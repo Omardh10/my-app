@@ -22,7 +22,7 @@ const Detailes = () => {
         <div className='row firo'>
             <div className='col-lg-6 col-md-6 col-sm-12'>
                 
-                <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} width={400} height={400} className='imgdet'/>
+                <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} width={400} alt='image1' height={400} className='imgdet'/>
             </div>
             <div className='col-lg-6 col-md-6 col-sm-12 colcont'>
                 <h5><h2>اسم الفيلم : </h2> {movie.title}</h5>
